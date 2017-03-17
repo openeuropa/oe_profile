@@ -1,5 +1,5 @@
 {
-  "name": "ec-europa/poc-profile",
+  "name": "ec-europa/poc_profile",
   "description": "Drupal 8 proof of concept: Installation profile.",
   "type": "drupal-profile",
   "license": "EUPL-1.1",
