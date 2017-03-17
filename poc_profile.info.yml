@@ -1,0 +1,45 @@
+name: POC Profile
+type: profile
+description: POC install profile.
+project: poc_profile
+version: VERSION
+core: 8.x
+
+dependencies:
+
+  # Core
+  - node
+  - history
+  - block
+  - ckeditor
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - automated_cron
+  - filter
+  - user
+
+  # Contrib
+  - coffee
+
+themes:
+  - seven
+  - bartik
