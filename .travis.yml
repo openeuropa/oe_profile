@@ -19,8 +19,9 @@ before_script:
   - echo "sendmail_path=`which true`" >> `php --ini | grep "Loaded Configuration" | awk '{print $4}'`
   # Create database.
   - mysql -e 'create database drupal'
-  - cd tests/web
+  - cd tests
   - composer install
+  - cd web
   # Test latest commit on current branch.
   - git clone --branch=$TRAVIS_BRANCH https://github.com/$TRAVIS_REPO_SLUG.git profiles/custom/poc_profile
   - ../vendor/bin/drush si poc_profile -y --db-url=mysql://travis:@127.0.0.1/drupal
