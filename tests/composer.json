@@ -1,0 +1,41 @@
+{
+  "name": "ec-europa/poc_profile",
+  "description": "Drupal 8 proof of concept: Installation profile test site.",
+  "type": "project",
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal-composer/drupal-scaffold": "^2.2",
+    "drupal/config_installer": "1.3.0",
+    "drupal/core": "~8",
+    "drupal/console": "0.11.3",
+    "drush/drush": "~8.0",
+    "drupal/coffee": "~1",
+    "phpunit/phpunit": "5.5.*",
+    "mikey179/vfsStream": "*",
+    "ec-europa/poc-behat": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/ec-europa/poc-behat.git"
+    }
+  ],
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  }
+}
