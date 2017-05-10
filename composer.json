@@ -2,52 +2,5 @@
   "name": "ec-europa/poc_profile",
   "description": "Drupal 8 proof of concept: Installation profile.",
   "type": "drupal-profile",
-  "license": "EUPL-1.1",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "require": {
-    "cweagans/composer-patches": "^1.5.0",
-    "composer/installers": "^1.0",
-    "drupal-composer/drupal-scaffold": "^2.0.0",
-    "drupal/core": "^8",
-    "drupal/coffee": "1.0-beta2"
-  },
-  "require-dev": {
-    "ec-europa/poc-code-review": "*"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/ec-europa/poc-code-review.git"
-    }
-  ],
-  "scripts": {
-    "post-install-cmd": [
-      "@composer drupal-scaffold"
-    ],
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-  },
-  "extra": {
-    "installer-paths": {
-      "web/core": [
-        "type:drupal-core"
-      ],
-      "web/libraries/{$name}": [
-        "type:drupal-library"
-      ],
-      "web/modules/contrib/{$name}": [
-        "type:drupal-module"
-      ],
-      "web/profiles/contrib/{$name}": [
-        "type:drupal-profile"
-      ],
-      "web/themes/contrib/{$name}": [
-        "type:drupal-theme"
-      ]
-    }
-  }
+  "license": "EUPL-1.1"
 }

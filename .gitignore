@@ -1,5 +1,2 @@
-tests/web/
 vendor/
-node_modules/
-behat.yml
 composer.lock

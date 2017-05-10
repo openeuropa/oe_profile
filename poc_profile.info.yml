@@ -11,17 +11,13 @@ dependencies:
   - node
   - history
   - block
-  - ckeditor
   - config
-  - contextual
-  - contact
   - menu_link_content
   - datetime
   - block_content
   - editor
   - help
   - image
-  - menu_ui
   - options
   - path
   - page_cache
@@ -29,17 +25,10 @@ dependencies:
   - taxonomy
   - dblog
   - toolbar
-  - field_ui
   - file
-  - views
-  - views_ui
-  - automated_cron
   - filter
   - user
 
-  # Contrib
-  - coffee
-
 themes:
   - seven
-  - bartik
+  - classy
