@@ -7,7 +7,6 @@ core: 8.x
 
 dependencies:
 
-  # Core
   - node
   - history
   - block
@@ -25,10 +24,14 @@ dependencies:
   - taxonomy
   - dblog
   - toolbar
+  - field_ui
   - file
   - filter
   - user
+  - views
+  - views_ui
+  - poc_core
 
 themes:
   - seven
-  - classy
+  - poc_theme
