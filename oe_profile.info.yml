@@ -1,7 +1,7 @@
-name: POC Profile
+name: OpenEuropa Profile
 type: profile
-description: POC install profile.
-project: poc_profile
+description: OpenEuropa installation profile.
+project: oe_profile
 version: VERSION
 core: 8.x
 
@@ -30,8 +30,8 @@ dependencies:
   - user
   - views
   - views_ui
-  - poc_core
+  - oe_core
 
 themes:
   - seven
-  - poc_theme
+  - oe_theme
