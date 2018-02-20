@@ -1,3 +1,5 @@
+**Abandoned. Check the [OpenEuropa project](https://github.com/openeuropa/openeuropa) for more information.**
+
 # Installation profile
 
 Basic installation profile, all it does is:
