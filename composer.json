@@ -2,8 +2,5 @@
   "name": "openeuropa/oe_profile",
   "description": "OpenEuropa installation profile.",
   "type": "drupal-profile",
-  "license": "EUPL-1.1",
-    "require-dev": {
-        "drupal/devel": "~1.2"
-    }
+  "license": "EUPL-1.1"
 }
