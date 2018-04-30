@@ -30,7 +30,6 @@ dependencies:
   - user
   - views
   - views_ui
-  - oe_core
 
 themes:
   - seven
