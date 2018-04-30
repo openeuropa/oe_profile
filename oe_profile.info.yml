@@ -30,7 +30,6 @@ dependencies:
   - user
   - views
   - views_ui
-  - devel
 
 themes:
   - seven
