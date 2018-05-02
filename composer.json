@@ -1,6 +1,17 @@
 {
-  "name": "openeuropa/oe_profile",
-  "description": "OpenEuropa installation profile.",
-  "type": "drupal-profile",
-  "license": "EUPL-1.1"
+    "name": "openeuropa/oe_profile",
+    "description": "OpenEuropa installation profile.",
+    "type": "drupal-profile",
+    "license": "EUPL-1.2",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "openeuropa/code-review": "^0.2",
+        "openeuropa/task-runner": "^0.5",
+        "openeuropa/oe_theme": "^0.1.0",
+        "nikic/php-parser": "~3"
+    }
 }
