@@ -5,11 +5,11 @@
  * Install, update and uninstall functions for the oe_profile install profile.
  */
 
+declare(strict_types = 1);
+
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\shortcut\Entity\Shortcut;
-
-declare(strict_types = 1);
 
 /**
  * Implements hook_install().
