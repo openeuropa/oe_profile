@@ -29,6 +29,7 @@ dependencies:
   - user
   - views
   - views_ui
+  - oe_theme_demo
 
 themes:
   - seven
