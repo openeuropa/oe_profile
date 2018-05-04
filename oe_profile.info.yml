@@ -29,8 +29,18 @@ dependencies:
   - user
   - views
   - views_ui
+  - oe_theme_helper
   - oe_theme_demo
 
 themes:
   - seven
   - oe_theme
+
+config_devel:
+  optional:
+    - block.block.oe_theme_demo_main_navigation
+    - block.block.oe_theme_breadcrumb
+    - block.block.oe_theme_main_page_content
+    - block.block.oe_theme_page_title
+    - block.block.oe_theme_site_branding
+    - block.block.oe_theme_tabs
