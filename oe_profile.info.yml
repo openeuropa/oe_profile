@@ -7,14 +7,12 @@ core: 8.x
 
 dependencies:
   - node
-  - history
   - block
   - config
   - menu_link_content
   - datetime
   - block_content
   - editor
-  - help
   - image
   - options
   - path
@@ -23,14 +21,12 @@ dependencies:
   - taxonomy
   - dblog
   - toolbar
-  - field_ui
   - file
   - filter
   - user
   - views
-  - views_ui
-  - oe_theme_helper
   - oe_theme_demo
+  - oe_paragraphs
 
 themes:
   - seven

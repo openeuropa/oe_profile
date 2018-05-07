@@ -8,27 +8,24 @@
 declare(strict_types = 1);
 
 use Drupal\user\Entity\User;
-use Drupal\user\RoleInterface;
-use Drupal\shortcut\Entity\Shortcut;
 
 /**
  * Implements hook_install().
- *
- * Perform actions to set up the site for this profile.
- *
- * @see system_install()
  */
 function oe_profile_install() {
   // Set oe_theme as default.
   \Drupal::service('theme_installer')->install(['oe_theme']);
   \Drupal::configFactory()
-  ->getEditable('system.theme')
-  ->set('default', 'oe_theme')
-  ->save();
+    ->getEditable('system.theme')
+    ->set('default', 'oe_theme')
+    ->save();
 
-  //   // Set front page to "node".
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
-  
+  // // Set front page to "node".
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('page.front', '/node')
+    ->save(TRUE);
+
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
   $user->roles[] = 'administrator';
