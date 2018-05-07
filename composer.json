@@ -6,12 +6,65 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "openeuropa/code-review": "*",
+        "openeuropa/task-runner": "*",
+        "openeuropa/oe_theme": "dev-OPENEUROPA-298#4009a01"
     },
     "require-dev": {
+        "nikic/php-parser": "*",
+        "cweagans/composer-patches": "~1.0",
         "openeuropa/code-review": "^0.2",
         "openeuropa/task-runner": "^0.5",
-        "openeuropa/oe_theme": "^0.1.0",
-        "nikic/php-parser": "~3"
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "composer/installers": "^1.2",
+        "drupal/console": "^1",
+        "drupal/config_devel": "~1.2",
+        "openeuropa/oe_paragraphs": "dev-master",
+        "drush/drush": "^9",
+        "drupal/drupal-extension": "^3.4",
+        "symfony/dom-crawler": "^3",
+        "webflo/drupal-core-require-dev": "^8.5",
+        "drupal/styleguide": "~1.0-alpha3"
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\oe_theme\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Drupal\\Tests": "build/core/tests",
+            "Drupal\\KernelTests": "build/core/tests",
+            "Drupal\\FunctionalTests": "build/core/tests",
+            "Drupal\\FunctionalJavascriptTests": "build/core/tests"
+        },
+        "psr-4": {
+            "Drupal\\simpletest\\": "build/core/modules/simpletest/src",
+            "Drupal\\Tests\\oe_theme\\": "tests"
+        }
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "extra": {
+        "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/474684": "https://www.drupal.org/files/issues/474684-151.patch",
+                "https://www.drupal.org/project/drupal/issues/2943172": "https://www.drupal.org/files/issues/2943172-kernel-test-base.patch"
+            }
+        },
+        "installer-paths": {
+            "build/core": ["type:drupal-core"],
+            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "build/modules/contrib/{$name}": ["type:drupal-module"],
+            "build/themes/contrib/{$name}": ["type:drupal-theme"]
+        }
     }
 }

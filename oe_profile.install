@@ -19,6 +19,12 @@ use Drupal\shortcut\Entity\Shortcut;
  * @see system_install()
  */
 function oe_profile_install() {
+  // Set oe_theme as default.
+  \Drupal::service('theme_installer')->install(['oe_theme']);
+  \Drupal::configFactory()
+  ->getEditable('system.theme')
+  ->set('default', 'oe_theme')
+  ->save();
 
   //   // Set front page to "node".
   \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/node')->save(TRUE);
