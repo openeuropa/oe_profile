@@ -13,17 +13,6 @@ and themes. Most importantly this will allow modules and themes maintainers to p
 
 This profile will also be used to build a basic site using the multiple comonents of OpenEuropa, including oe_multilingual, oe_paragraphs and oe_webtools.
 
-
-**Table of contents:**
-
-- [Installation](#installation)
-- [Development](#development)
-  - [Project setup](#project-setup)
-  - [Using Docker Compose](#using-docker-compose)
-  - [Disable Drupal 8 caching](#disable-drupal-8-caching)
-  - [Working with ECL components](#working-with-ecl-components)
-- [Demo module](#demo-module)
-
 ## Installation
 
 The recommended way of installing the OpenEuropa profile is via a [Composer-based workflow][2].
