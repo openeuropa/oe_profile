@@ -9,7 +9,7 @@
         "php": "^7.1",
         "drupal/styleguide": "^1.0@alpha",
         "openeuropa/oe_paragraphs": "dev-master",
-        "openeuropa/oe_theme": "dev-OPENEUROPA-298#a203052"
+        "openeuropa/oe_theme": "dev-master"
     },
     "require-dev": {
         "composer/installers": "^1.2",
