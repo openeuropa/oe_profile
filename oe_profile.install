@@ -7,12 +7,10 @@
 
 declare(strict_types = 1);
 
-use Drupal\user\Entity\User;
-
 /**
  * Implements hook_install().
  */
-function oe_profile_install() {
+function oe_profile_install(): void {
   // Set oe_theme as default.
   \Drupal::service('theme_installer')->install(['oe_theme']);
   \Drupal::configFactory()
@@ -26,12 +24,4 @@ function oe_profile_install() {
     ->set('page.front', '/node')
     ->save(TRUE);
 
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
-
-  // We install some menu links, so we have to rebuild the router, to ensure the
-  // menu links are valid.
-  \Drupal::service('router.builder')->rebuildIfNeeded();
 }
