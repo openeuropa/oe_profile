@@ -9,7 +9,8 @@
         "php": "^7.1",
         "drupal/styleguide": "^1.0@alpha",
         "openeuropa/oe_paragraphs": "dev-master",
-        "openeuropa/oe_theme": "dev-master"
+        "openeuropa/oe_theme": "^0.1",
+        "openeuropa/composer-artifacts": "dev-OPENEUROPA-575"
     },
     "require-dev": {
         "composer/installers": "^1.2",
@@ -23,7 +24,7 @@
         "openeuropa/code-review": "^0.2",
         "openeuropa/task-runner": "^0.5",
         "webflo/drupal-core-require-dev": "^8.6"
-    },
+    },   
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "post-install-cmd": "./vendor/bin/run drupal:site-setup",
@@ -33,6 +34,10 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "openeuropa": {
+        	"type": "vcs",
+        	"url": "https://github.com/openeuropa/composer-artifacts"
         }
     },
     "autoload": {
@@ -46,6 +51,14 @@
         }
     },
     "extra": {
+        "artifacts": {
+            "openeuropa/oe_theme": {
+              "dist": {
+                "url": "https://github.com/openeuropa/oe_theme/releases/download/0.1.0/oe_theme-0.1.0.tar.gz",
+                "type": "tar"
+              }
+            }
+        },
         "composer-exit-on-patch-failure": true,
         "patches": {
             "drupal/core": {

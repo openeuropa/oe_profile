@@ -25,7 +25,6 @@ dependencies:
   - filter
   - user
   - views
-  - oe_theme_demo
   - oe_paragraphs
 
 themes:
