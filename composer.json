@@ -7,24 +7,21 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "drupal/styleguide": "^1.0@alpha",
-        "openeuropa/oe_paragraphs": "dev-master",
-        "openeuropa/oe_theme": "^0.1",
-        "openeuropa/composer-artifacts": "dev-OPENEUROPA-575"
+        "openeuropa/oe_theme": ">=0.2"
     },
     "require-dev": {
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/config_devel": "~1.2",
         "drupal/console": "^1",
         "drupal/drupal-extension": "^4.0.0@alpha",
         "drush/drush": "^9",
-        "drupal-composer/drupal-scaffold": "^2.2",
         "nikic/php-parser": "~3",
         "openeuropa/code-review": "^0.2",
+        "openeuropa/composer-artifacts": "^0.1",
         "openeuropa/task-runner": "^0.5",
         "webflo/drupal-core-require-dev": "^8.6"
-    },   
+    },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "post-install-cmd": "./vendor/bin/run drupal:site-setup",
@@ -34,60 +31,22 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        "openeuropa": {
-        	"type": "vcs",
-        	"url": "https://github.com/openeuropa/composer-artifacts"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Drupal\\oe_profile\\": "./src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Drupal\\Tests\\oe_profile\\": "tests"
         }
     },
     "extra": {
         "artifacts": {
             "openeuropa/oe_theme": {
-              "dist": {
-                "url": "https://github.com/openeuropa/oe_theme/releases/download/0.1.0/oe_theme-0.1.0.tar.gz",
-                "type": "tar"
-              }
-            }
-        },
-        "composer-exit-on-patch-failure": true,
-        "patches": {
-            "drupal/core": {
-                "https://www.drupal.org/project/drupal/issues/474684": "https://www.drupal.org/files/issues/2018-05-02/474684-165.patch",
-                "https://www.drupal.org/project/drupal/issues/2943172": "https://www.drupal.org/files/issues/2018-04-15/2943172-kernel-test-base-2.patch",
-                "https://www.drupal.org/project/drupal/issues/2599228": "https://www.drupal.org/files/issues/2599228-31-tests-only.patch"
-            }
-        },
-        "patches-ignore": {
-            "openeuropa/oe_theme": {
-                "drupal/core": {
-                    "https://www.drupal.org/project/drupal/issues/474684": "https://www.drupal.org/files/issues/474684-151.patch",
-                    "https://www.drupal.org/project/drupal/issues/2943172": "https://www.drupal.org/files/issues/2943172-kernel-test-base.patch"
+                "dist": {
+                    "url": "https://github.com/{name}/releases/download/{pretty-version}/{project-name}-{pretty-version}.tar.gz",
+                    "type": "tar"
                 }
             }
         },
         "installer-paths": {
-            "build/core": [
-                "type:drupal-core"
-            ],
-            "build/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "build/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "build/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ]
+            "build/core": ["type:drupal-core"],
+            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "build/modules/contrib/{$name}": ["type:drupal-module"],
+            "build/themes/contrib/{$name}": ["type:drupal-theme"]
         }
     },
     "config": {

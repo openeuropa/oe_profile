@@ -7,4 +7,4 @@ Feature: Setup
   Scenario: The site is installed
 
     Given I am on the homepage
-    Then I should see "Welcome to Site name"
+    Then I should see "Welcome to OpenEuropa"
