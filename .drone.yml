@@ -4,7 +4,7 @@ workspace:
 
 services:
   web:
-    image: fpfis/php71-build:latest
+    image: fpfis/httpd-php-dev:7.1
     environment:
      - DOCUMENT_ROOT=/test/oe_profile
   mysql:
@@ -19,25 +19,26 @@ matrix:
 pipeline:
 
   composer-install:
-    image: fpfis/php71-build
+    group: prepare
+    image: fpfis/httpd-php-dev:7.1
     volumes:
       - /cache:/cache
     commands:
       - composer require webflo/drupal-core-require-dev:${DRUPAL_VERSION=8.6.x}
 
   site-install:
-    image: fpfis/php71-build
+    image: fpfis/httpd-php-dev:7.1
     commands:
       - ./vendor/bin/run drupal:site-install
 
   grumphp:
     group: test
-    image: fpfis/php71-build
+    image: fpfis/httpd-php-dev:7.1
     commands:
       - ./vendor/bin/grumphp run
 
   behat:
     group: test
-    image: fpfis/php71-build
+    image: fpfis/httpd-php-dev:7.1
     commands:
       - ./vendor/bin/behat
