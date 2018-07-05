@@ -12,19 +12,14 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
 
-matrix:
-  DRUPAL_VERSION:
-    - 8.6.x
-
 pipeline:
-
   composer-install:
     group: prepare
     image: fpfis/httpd-php-dev:7.1
     volumes:
       - /cache:/cache
     commands:
-      - composer require webflo/drupal-core-require-dev:${DRUPAL_VERSION=8.6.x}
+      - composer install
 
   site-install:
     image: fpfis/httpd-php-dev:7.1
