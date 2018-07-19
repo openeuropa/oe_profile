@@ -7,6 +7,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
+        "drupal/core": "~8.6",
         "openeuropa/oe_theme": ">=0.2"
     },
     "require-dev": {
@@ -20,7 +21,7 @@
         "openeuropa/code-review": "^0.2",
         "openeuropa/composer-artifacts": "^0.1",
         "openeuropa/task-runner": "^0.5",
-        "webflo/drupal-core-require-dev": "^8.6"
+        "webflo/drupal-core-require-dev": "~8.6"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
