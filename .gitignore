@@ -8,3 +8,4 @@ package-lock*
 behat.yml
 runner.yml
 phpunit.xml
+.idea
