@@ -43,6 +43,7 @@
                 }
             }
         },
+        "enable-patching": true,
         "installer-paths": {
             "build/core": ["type:drupal-core"],
             "build/profiles/contrib/{$name}": ["type:drupal-profile"],
