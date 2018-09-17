@@ -4,7 +4,7 @@ workspace:
 
 services:
   web:
-    image: fpfis/httpd-php-dev:7.1
+    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     environment:
      - DOCUMENT_ROOT=/test/oe_profile
   mysql:
@@ -15,11 +15,11 @@ services:
 pipeline:
   composer-install:
     group: prepare
-    image: fpfis/httpd-php-dev:7.1
+    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     volumes:
       - /cache:/cache
     commands:
-      - composer install
+      - composer update ${COMPOSER_BOUNDARY}
 
   site-install:
     image: fpfis/httpd-php-dev:7.1
@@ -28,17 +28,20 @@ pipeline:
 
   grumphp:
     group: test
-    image: fpfis/httpd-php-dev:7.1
+    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     commands:
       - ./vendor/bin/grumphp run
 
   behat:
     group: test
-    image: fpfis/httpd-php-dev:7.1
+    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     commands:
       - ./vendor/bin/behat
 
 matrix:
+  IMAGE_PHP:
+    - fpfis/httpd-php-dev:5.6
+    - fpfis/httpd-php-dev:7.1
   COMPOSER_BOUNDARY:
-    - lowest
-    - highest
+    - '--prefer-lowest'
+    - ''
