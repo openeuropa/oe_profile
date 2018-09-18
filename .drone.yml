@@ -6,42 +6,56 @@ services:
   web:
     image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     environment:
-     - DOCUMENT_ROOT=/test/oe_profile
+    - DOCUMENT_ROOT=/test/oe_profile
   mysql:
     image: percona/percona-server:5.6
     environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
 
 pipeline:
-  composer-install:
+  composer-install-lowest:
     group: prepare
     image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     volumes:
-      - /cache:/cache
+    - /cache:/cache
     commands:
-      - composer update ${COMPOSER_BOUNDARY}
+    - composer update --prefer-lowest --ansi
+    when:
+      matrix:
+        COMPOSER_BOUNDARY: lowest
+
+  composer-install-highest:
+    group: prepare
+    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
+    volumes:
+    - /cache:/cache
+    commands:
+    - composer install --ansi
+    when:
+      matrix:
+        COMPOSER_BOUNDARY: highest
 
   site-install:
     image: fpfis/httpd-php-dev:7.1
     commands:
-      - ./vendor/bin/run drupal:site-install
+    - ./vendor/bin/run drupal:site-install
 
   grumphp:
     group: test
     image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     commands:
-      - ./vendor/bin/grumphp run
+    - ./vendor/bin/grumphp run
 
   behat:
     group: test
     image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     commands:
-      - ./vendor/bin/behat
+    - ./vendor/bin/behat
 
 matrix:
   IMAGE_PHP:
-    - fpfis/httpd-php-dev:5.6
-    - fpfis/httpd-php-dev:7.1
+  - fpfis/httpd-php-dev:5.6
+  - fpfis/httpd-php-dev:7.1
   COMPOSER_BOUNDARY:
-    - '--prefer-lowest'
-    - ''
+  - lowest
+  - highest
