@@ -6,9 +6,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1",
         "drupal/core": "^8.6",
-        "openeuropa/oe_theme": "^0.6"
+        "php": "^7.1",
+        "openeuropa/oe_theme": "^0.6.2"
     },
     "require-dev": {
         "composer/installers": "~1.5",
