@@ -18,10 +18,10 @@
         "drupal/drupal-extension": "~4.0.0@alpha",
         "drush/drush": "~9.0",
         "nikic/php-parser": "~3.0",
-        "openeuropa/code-review": "~0.3",
+        "openeuropa/code-review": "~1.0",
         "openeuropa/composer-artifacts": "~0.1",
-        "openeuropa/drupal-core-require-dev": "~8.6@alpha",
-        "openeuropa/task-runner": "~0.5"
+        "openeuropa/drupal-core-require-dev": "^8.6",
+        "openeuropa/task-runner": "~0.8"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
