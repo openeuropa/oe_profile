@@ -1,6 +1,7 @@
 # OpenEuropa profile
 
 [![Build Status](https://drone.fpfis.eu/api/badges/openeuropa/oe_profile/status.svg?branch=master)](https://drone.fpfis.eu/openeuropa/oe_profile)
+[![Packagist](https://img.shields.io/packagist/v/openeuropa/oe_profile.svg)](https://packagist.org/packages/openeuropa/oe_profile)
 
 Basic installation profile, all it does is:
 
