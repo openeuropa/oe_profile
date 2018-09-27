@@ -1,5 +1,19 @@
 # Change Log
 
+## [0.2.0](https://github.com/openeuropa/oe_profile/tree/0.2.0) (2018-09-27)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.1.0...0.2.0)
+
+**Merged pull requests:**
+
+- OPENEUROPA-783: Make sure component dependencies are as relaxed as possible. [\#15](https://github.com/openeuropa/oe_profile/pull/15) ([aritomelo](https://github.com/aritomelo))
+- OPENEUROPA-1161: Add support for installation from existing configuration and do not download translations at installation time [\#14](https://github.com/openeuropa/oe_profile/pull/14) ([ademarco](https://github.com/ademarco))
+- OPENEUROPA-1119: Create a docker-compose.yml.dist file [\#13](https://github.com/openeuropa/oe_profile/pull/13) ([netlooker](https://github.com/netlooker))
+- OPENEUROPA-770: Add dev dependency. [\#12](https://github.com/openeuropa/oe_profile/pull/12) ([Medi4tor](https://github.com/Medi4tor))
+- OPENEUROPA-632: Add minimum stability to drupal core. [\#11](https://github.com/openeuropa/oe_profile/pull/11) ([imanoleguskiza](https://github.com/imanoleguskiza))
+- OPENEUROPA-721: Update code-review and grump.yml.dist file. [\#10](https://github.com/openeuropa/oe_profile/pull/10) ([imanoleguskiza](https://github.com/imanoleguskiza))
+- OPENEUROPA-369: Make sure that all OpenEuropa projects are released under EUPL-1.2 [\#9](https://github.com/openeuropa/oe_profile/pull/9) ([drupol](https://github.com/drupol))
+- OPENEUROPA-582: Update images on docker-compose and drone file. [\#8](https://github.com/openeuropa/oe_profile/pull/8) ([voidtek](https://github.com/voidtek))
+
 ## [0.1.0](https://github.com/openeuropa/oe_profile/tree/0.1.0) (2018-06-14)
 **Closed issues:**
 
@@ -8,6 +22,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for 0.1.0 release. [\#6](https://github.com/openeuropa/oe_profile/pull/6) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-656: Fix OpenEuropa Profile technical debt issues	 [\#5](https://github.com/openeuropa/oe_profile/pull/5) ([richardcanoe](https://github.com/richardcanoe))
 - OPENEUROPA-298: Update oe\_theme to dev-master. [\#4](https://github.com/openeuropa/oe_profile/pull/4) ([richardcanoe](https://github.com/richardcanoe))
 - Openeuropa 298 [\#3](https://github.com/openeuropa/oe_profile/pull/3) ([richardcanoe](https://github.com/richardcanoe))
