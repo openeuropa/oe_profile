@@ -8,7 +8,7 @@
     "require": {
         "php": "^7.1",
         "drupal/core": "^8.6",
-        "openeuropa/oe_theme": "^0.6.2"
+        "openeuropa/oe_theme": "~0.2 || ~1"
     },
     "require-dev": {
         "composer/installers": "~1.2",
@@ -21,7 +21,7 @@
         "openeuropa/code-review": "~1.0",
         "openeuropa/composer-artifacts": "~0.1",
         "openeuropa/drupal-core-require-dev": "^8.6",
-        "openeuropa/task-runner": "~1.0"
+        "openeuropa/task-runner": "~1.0-beta3"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
