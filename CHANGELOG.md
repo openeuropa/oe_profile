@@ -1,10 +1,18 @@
 # Change Log
 
+## [0.2.1](https://github.com/openeuropa/oe_profile/tree/0.2.1) (2018-12-03)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.2.0...0.2.1)
+
+**Merged pull requests:**
+
+- OPENEUROPA-1409: Upping the theme dependency. [\#17](https://github.com/openeuropa/oe_profile/pull/17) ([ademarco](https://github.com/ademarco))
+
 ## [0.2.0](https://github.com/openeuropa/oe_profile/tree/0.2.0) (2018-09-27)
 [Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.1.0...0.2.0)
 
 **Merged pull requests:**
 
+- OPENEUROPA-1241: Update CHANGELOG.md. [\#16](https://github.com/openeuropa/oe_profile/pull/16) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-783: Make sure component dependencies are as relaxed as possible. [\#15](https://github.com/openeuropa/oe_profile/pull/15) ([aritomelo](https://github.com/aritomelo))
 - OPENEUROPA-1161: Add support for installation from existing configuration and do not download translations at installation time [\#14](https://github.com/openeuropa/oe_profile/pull/14) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-1119: Create a docker-compose.yml.dist file [\#13](https://github.com/openeuropa/oe_profile/pull/13) ([netlooker](https://github.com/netlooker))
