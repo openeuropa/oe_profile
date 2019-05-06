@@ -1,10 +1,20 @@
 # Change Log
 
+## [0.2.2](https://github.com/openeuropa/oe_profile/tree/0.2.2) (2019-05-06)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.2.1...0.2.2)
+
+**Merged pull requests:**
+
+- OPENEUROPA-1609: Add ajax\_timeout setting for behat. [\#21](https://github.com/openeuropa/oe_profile/pull/21) ([nagyad](https://github.com/nagyad))
+- OPENEUROPA-1609 Fix behat.yml.dist to use drupal-extension properly. [\#20](https://github.com/openeuropa/oe_profile/pull/20) ([nagyad](https://github.com/nagyad))
+- OPENEUROPA-1533: Add --strict flag for Behat tests executions. [\#19](https://github.com/openeuropa/oe_profile/pull/19) ([sergepavle](https://github.com/sergepavle))
+
 ## [0.2.1](https://github.com/openeuropa/oe_profile/tree/0.2.1) (2018-12-03)
 [Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.2.0...0.2.1)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for 0.2.1 release. [\#18](https://github.com/openeuropa/oe_profile/pull/18) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-1409: Upping the theme dependency. [\#17](https://github.com/openeuropa/oe_profile/pull/17) ([ademarco](https://github.com/ademarco))
 
 ## [0.2.0](https://github.com/openeuropa/oe_profile/tree/0.2.0) (2018-09-27)
