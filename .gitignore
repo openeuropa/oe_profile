@@ -9,4 +9,5 @@ behat.yml
 runner.yml
 phpunit.xml
 .idea
-docker-compose.yml
+docker-compose.*.yml
+
