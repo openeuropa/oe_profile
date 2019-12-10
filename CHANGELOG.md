@@ -1,10 +1,22 @@
 # Change Log
 
+## [0.4.0](https://github.com/openeuropa/oe_profile/tree/0.4.0) (2019-12-10)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.3.0...0.4.0)
+
+**Merged pull requests:**
+
+- OPENEUROPA-2480: Allow sites to use Theme version 2.x. [\#29](https://github.com/openeuropa/oe_profile/pull/29) ([ademarco](https://github.com/ademarco))
+- OPENEUROPA-2258: Undo use of PHP 7.2. [\#28](https://github.com/openeuropa/oe_profile/pull/28) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2464: Use PHP 7.1 in docker-compose. [\#27](https://github.com/openeuropa/oe_profile/pull/27) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2258: Use PHP 7.2 [\#26](https://github.com/openeuropa/oe_profile/pull/26) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-1897: Use ci image. [\#25](https://github.com/openeuropa/oe_profile/pull/25) ([imanoleguskiza](https://github.com/imanoleguskiza))
+
 ## [0.3.0](https://github.com/openeuropa/oe_profile/tree/0.3.0) (2019-05-07)
 [Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.2.2...0.3.0)
 
 **Merged pull requests:**
 
+- OPENEUROPA-1813: Create release 0.3.0. [\#24](https://github.com/openeuropa/oe_profile/pull/24) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-1813: Update drupal/core to 8.7. [\#23](https://github.com/openeuropa/oe_profile/pull/23) ([voidtek](https://github.com/voidtek))
 
 ## [0.2.2](https://github.com/openeuropa/oe_profile/tree/0.2.2) (2019-05-06)
