@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "drupal/core": "^8.7",
+        "drupal/core-recommended": "^8.7",
         "openeuropa/oe_theme": "~0.15 || ^1.0 || ^2.0"
     },
     "require-dev": {
