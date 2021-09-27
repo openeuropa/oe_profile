@@ -41,6 +41,19 @@ This will:
 - Setup Drush and Drupal's settings using values from `./runner.yml.dist`
 - Setup Behat configuration file using values from `./runner.yml.dist`
 
+**Please note:** project files and directories are symlinked within the target site by using the
+[OpenEuropa Task Runner's Drupal project symlink](https://github.com/openeuropa/task-runner-drupal-project-symlink)
+command.
+
+If you add a new file or directory in the root of the project, you need to re-run `drupal:site-setup` in order to make
+sure they are correctly symlinked.
+
+If you don't want to re-run a full site setup for that, you can simply run:
+
+```
+$ ./vendor/bin/run drupal:symlink-project
+```
+
 After a successful setup install the site by running:
 
 ```
