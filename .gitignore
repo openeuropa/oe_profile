@@ -11,3 +11,4 @@ phpunit.xml
 .idea
 docker-compose.*.yml
 
+/.gitattributes

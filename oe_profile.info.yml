@@ -30,3 +30,16 @@ dependencies:
 themes:
   - seven
   - oe_theme
+
+config_devel:
+  install:
+    - system.theme
+  optional:
+    - block.block.seven_breadcrumbs
+    - block.block.seven_content
+    - block.block.seven_local_actions
+    - block.block.seven_login
+    - block.block.seven_messages
+    - block.block.seven_page_title
+    - block.block.seven_primary_local_tasks
+    - block.block.seven_secondary_local_tasks
