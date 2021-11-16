@@ -1,10 +1,25 @@
 # Change Log
 
+## [0.5.0](https://github.com/openeuropa/oe_profile/tree/0.5.0) (2021-11-16)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.4.0...0.5.0)
+
+**Merged pull requests:**
+
+- EWPP-1139: Use new symlink method and update exported configuration. [\#39](https://github.com/openeuropa/oe_profile/pull/39) ([ademarco](https://github.com/ademarco))
+- EWPP-1139: Update oe\_theme version. [\#38](https://github.com/openeuropa/oe_profile/pull/38) ([nagyad](https://github.com/nagyad))
+- EWPP-1139: Drupal 9 compatibility fixes. [\#37](https://github.com/openeuropa/oe_profile/pull/37) ([22Alexandra](https://github.com/22Alexandra))
+- EWPP-721: Update xdebug configuration. [\#36](https://github.com/openeuropa/oe_profile/pull/36) ([22Alexandra](https://github.com/22Alexandra))
+- EWPP-516: Update docker images. [\#35](https://github.com/openeuropa/oe_profile/pull/35) ([22Alexandra](https://github.com/22Alexandra))
+- OPENEUROPA-0000: Use drupal/core instead of drupal/core-recommended. [\#33](https://github.com/openeuropa/oe_profile/pull/33) ([22Alexandra](https://github.com/22Alexandra))
+- OPENEUROPA-2943: Upgrade to PHP 7.3. [\#32](https://github.com/openeuropa/oe_profile/pull/32) ([sergepavle](https://github.com/sergepavle))
+- OPENEUROPA-2604: Drupal 8 recommended project. [\#31](https://github.com/openeuropa/oe_profile/pull/31) ([upchuk](https://github.com/upchuk))
+
 ## [0.4.0](https://github.com/openeuropa/oe_profile/tree/0.4.0) (2019-12-10)
 [Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.3.0...0.4.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 0.4.0. [\#30](https://github.com/openeuropa/oe_profile/pull/30) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-2480: Allow sites to use Theme version 2.x. [\#29](https://github.com/openeuropa/oe_profile/pull/29) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-2258: Undo use of PHP 7.2. [\#28](https://github.com/openeuropa/oe_profile/pull/28) ([dxvargas](https://github.com/dxvargas))
 - OPENEUROPA-2464: Use PHP 7.1 in docker-compose. [\#27](https://github.com/openeuropa/oe_profile/pull/27) ([dxvargas](https://github.com/dxvargas))
@@ -46,7 +61,7 @@
 - OPENEUROPA-783: Make sure component dependencies are as relaxed as possible. [\#15](https://github.com/openeuropa/oe_profile/pull/15) ([aritomelo](https://github.com/aritomelo))
 - OPENEUROPA-1161: Add support for installation from existing configuration and do not download translations at installation time [\#14](https://github.com/openeuropa/oe_profile/pull/14) ([ademarco](https://github.com/ademarco))
 - OPENEUROPA-1119: Create a docker-compose.yml.dist file [\#13](https://github.com/openeuropa/oe_profile/pull/13) ([netlooker](https://github.com/netlooker))
-- OPENEUROPA-770: Add dev dependency. [\#12](https://github.com/openeuropa/oe_profile/pull/12) ([Medi4tor](https://github.com/Medi4tor))
+- OPENEUROPA-770: Add dev dependency. [\#12](https://github.com/openeuropa/oe_profile/pull/12) ([ku-enza](https://github.com/ku-enza))
 - OPENEUROPA-632: Add minimum stability to drupal core. [\#11](https://github.com/openeuropa/oe_profile/pull/11) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - OPENEUROPA-721: Update code-review and grump.yml.dist file. [\#10](https://github.com/openeuropa/oe_profile/pull/10) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - OPENEUROPA-369: Make sure that all OpenEuropa projects are released under EUPL-1.2 [\#9](https://github.com/openeuropa/oe_profile/pull/9) ([drupol](https://github.com/drupol))
