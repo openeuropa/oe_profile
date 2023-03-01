@@ -8,7 +8,7 @@
     "require": {
         "drupal/core": "^8.9 || ^9.1",
         "php": ">=7.3",
-        "openeuropa/oe_theme": "~3.0.0-beta6"
+        "openeuropa/oe_theme": "^3.1"
     },
     "require-dev": {
         "composer/installers": "^1.5",
