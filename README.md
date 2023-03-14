@@ -1,3 +1,10 @@
+# :warning: This repository is archived :warning:
+
+This installation profile is not maintained anymore and its usage discouraged.
+
+We recommend to create your own profile or use the "minimal" installation profile.\
+You can use the [profile switcher](https://www.drupal.org/project/profile_switcher) module to switch installation profile for existing sites.
+
 # OpenEuropa profile
 
 [![Build Status](https://drone.fpfis.eu/api/badges/openeuropa/oe_profile/status.svg?branch=master)](https://drone.fpfis.eu/openeuropa/oe_profile)
