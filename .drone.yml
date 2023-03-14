@@ -25,49 +25,38 @@ services:
       - MYSQL_DATABASE=drupal
 
 pipeline:
-  composer-install-lowest:
+  composer-install:
     group: prepare
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     volumes:
-    - /cache:/cache
+      - /cache/${DRONE_REPO_NAME}:/cache
     commands:
-    - composer update --prefer-lowest --prefer-stable --ansi --no-progress
-    when:
-      matrix:
-        COMPOSER_BOUNDARY: lowest
-
-  composer-install-highest:
-    group: prepare
-    image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
-    volumes:
-    - /cache:/cache
-    commands:
-    - composer install --ansi --no-progress
-    when:
-      matrix:
-        COMPOSER_BOUNDARY: highest
+      - composer self-update --2
+      - composer require drupal/core:~${CORE_VERSION} drupal/core-composer-scaffold:~${CORE_VERSION} --update-with-all-dependencies --ansi --no-progress --no-interaction
 
   site-install:
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     commands:
-    - ./vendor/bin/run drupal:site-install
+      - while ! mysqladmin ping -h mysql --silent; do sleep 1; done
+      - ./vendor/bin/run drupal:site-install
 
   grumphp:
     group: test
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     commands:
-    - ./vendor/bin/grumphp run
+      - ./vendor/bin/grumphp run
 
   behat:
     group: test
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     commands:
-    - ./vendor/bin/behat --strict
+      - ./vendor/bin/behat --strict
 
 matrix:
-  COMPOSER_BOUNDARY:
-    - lowest
-    - highest
-  PHP_VERSION:
-    - 8.0
-    - 8.1
+  include:
+    - CORE_VERSION: 9.4.0
+      PHP_VERSION: 8.0
+    - CORE_VERSION: 9.4.0
+      PHP_VERSION: 8.1
+    - CORE_VERSION: 10.0
+      PHP_VERSION: 8.1
