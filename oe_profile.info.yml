@@ -1,9 +1,7 @@
 name: OpenEuropa Profile
 type: profile
 description: 'OpenEuropa installation profile.'
-project: oe_profile
-version: VERSION
-core_version_requirement: ^8.9 || ^9.1
+core_version_requirement: ^9.4
 
 dependencies:
   - node
