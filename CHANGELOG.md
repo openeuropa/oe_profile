@@ -1,10 +1,19 @@
 # Change Log
 
+## [0.6.0](https://github.com/openeuropa/oe_profile/tree/0.6.0) (2023-03-15)
+[Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.5.0...0.6.0)
+
+**Merged pull requests:**
+
+- Update dependencies [\#44](https://github.com/openeuropa/oe_profile/pull/44) ([brummbar](https://github.com/brummbar))
+- Update oe\_profile dependencies [\#42](https://github.com/openeuropa/oe_profile/pull/42) ([LOBsTerr](https://github.com/LOBsTerr))
+
 ## [0.5.0](https://github.com/openeuropa/oe_profile/tree/0.5.0) (2021-11-16)
 [Full Changelog](https://github.com/openeuropa/oe_profile/compare/0.4.0...0.5.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md for release 0.5.0. [\#40](https://github.com/openeuropa/oe_profile/pull/40) ([ademarco](https://github.com/ademarco))
 - EWPP-1139: Use new symlink method and update exported configuration. [\#39](https://github.com/openeuropa/oe_profile/pull/39) ([ademarco](https://github.com/ademarco))
 - EWPP-1139: Update oe\_theme version. [\#38](https://github.com/openeuropa/oe_profile/pull/38) ([nagyad](https://github.com/nagyad))
 - EWPP-1139: Drupal 9 compatibility fixes. [\#37](https://github.com/openeuropa/oe_profile/pull/37) ([22Alexandra](https://github.com/22Alexandra))
